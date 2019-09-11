@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "News";
+}
+<script src="~/Scripts/navbar-menu.js"></script>
+<div class="jumbotron">
+    <h2>News</h2>
+    <button type="button" class="btn btn-outline-dark">1. Get the news</button>
+    <button type="button" class="btn btn-outline-dark">2. Score the news</button>
+    <button type="button" class="btn btn-outline-dark">3. Sort the news by score</button>
+    <button type="button" class="btn btn-outline-dark">4. Validate News</button>
+    <button type="button" class="btn btn-dark">Clean</button>
+</div>
+<table class="striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Link</th>
+            <th>Page</th>
+            <th>Date</th>
+            <th>Source</th>
+            <th>Score</th>
+            <th>Validated</th>
+            <th>Line</th>
+            <th>Duplicate Title</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td><a href="#" title="Link">Url</a></td>
+            <td>1</td>
+            <td>@DateTime.Now</td>
+            <td>libero </td>
+            <td><a class="red-text">10%</a></td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td><a href="#" title="Link">Url</a></td>
+            <td>1</td>
+            <td>@DateTime.Now</td>
+            <td>orci </td>
+            <td><a class="yellow-text">50%</a></td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td><a href="#" title="Link">Url</a></td>
+            <td>1</td>
+            <td>@DateTime.Now</td>
+            <td>aliquam</td>
+            <td><a class="green-text">100%</a></td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </tbody>
+</table>
+<script type="text/javascript" src="~/Scripts/materialize.js"></script>
+

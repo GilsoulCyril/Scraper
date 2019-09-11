@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="~/Content/materialize.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script type="text/javascript" src="~/Scripts/materialize.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+
+
+
+    <title>@ViewBag.Title - Project Scraper Web</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div id="wrapper" class="active">
+        <!-- Sidebar -->
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul id="sidebar_menu" class="sidebar-nav">
+                <li class="sidebar-brand"><a id="menu-toggle" href="#">Menu<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
+            </ul>
+            <ul class="sidebar-nav" id="sidebar">
+                <li><a href="/Home/Index">Home<span title="Home" class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href="/Home/News">News<span title="News" class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href="/Home/ValidatedNews">Validated News<span title="Validated News" class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href="/Home/Keywords">Keywords<span title="Keywords" class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href="/Home/GoodNews">GoodNews<span title="GoodNews" class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href="/Home/NewsAlreadyPublished">News Already Published<span title="News Already Published" class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href="/Home/DocumentGeneration">Document Generation<span title="Document Generation" class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href="/Home/Archives">Archives<span title="Archives" class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href="/Home/About">User Guide<span title="User Guide" class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href="/home/MyAccount">My Account<span title="My Account" class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href="/Home/Settings">Settings<span title="Settings" class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href="/Home/Tampon">Tampon<span title="Tampon" class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href="/Home/Problems">Problems<span title="Problems" class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href="/Home/VersionHistory">Version History<span title="Version History" class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href="/Home/Log">Log<span title="Log" class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href="/Home/Contact">Contact<span title="Contact" class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href="/Home/LogReg">Connect<span title="Connect" class="sub_icon glyphicon glyphicon-link"></span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Project</p>
+        </footer>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </div>
+
+</body>
+
+</html>

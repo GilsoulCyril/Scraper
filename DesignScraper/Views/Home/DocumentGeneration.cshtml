@@ -1,0 +1,88 @@
+﻿<script src="~/Scripts/navbar-menu.js"></script>
+@{
+    ViewBag.Title = "DocumentGeneration";
+}
+
+<div class="jumbotron">
+    <h2>Document Generation</h2>
+    <h4>Title : <input type="text" /></h4>
+    <h4>Categories : <input type="text" /></h4>
+
+
+    <div>
+        <h4>Control Variables</h4>
+
+        <div class="form-group">
+            <label for="bullet-select">Bullet points:</label>
+            <select class="form-control" id="bullet-select">
+                <option>--choose an option--</option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="sources-select">Sources:</label>
+            <select class="form-control" id="sources-select">
+                <option>--choose an option--</option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="header-select">Insert Header Picture:</label>
+            <select class="form-control" id="header-select">
+                <option>--Choose an option--</option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+            <label for="heaader">Choose a header picture:</label>
+
+            <input type="file"
+                   id="header" name="header"
+                   accept="image/png, image/jpeg">
+        </div>
+
+        <div class="form-group">
+            <label for="Signature">Signature:</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>--Choose an option--</option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="stylenews">Compiler Styles:</label>
+            <select class="form-control" id="stylenews">
+                <option>--Choose an option--</option>
+                <option>Styles 1</option>
+                <option>Styles 2</option>
+                <option>Styles 3</option>
+                <option>Styles 4</option>
+                <option>No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="formnews">Format:</label>
+            <select class="form-control" id="formnews">
+                <option>--Choose an option--</option>
+                <option>Email</option>
+                <option>PDF</option>
+                <option>Word</option>
+                <option>???</option>
+            </select>
+        </div>
+        <br />
+        <button>Compile Newsletter</button>
+    </div>
+</div>
+
+
+
+
+
+
+
